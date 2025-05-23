@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="https://julius-altmann-3333.github.io/bentley-flying-spur/bentley-flying-spur.css">
+
+  <script src="https://julius-altmann-3333.github.io/bentley-flying-spur/language-toggle.js"></script>
+  <script src="https://julius-altmann-3333.github.io/bentley-flying-spur/menu-toggle.js"></script>
+  <script src="https://julius-altmann-3333.github.io/bentley-flying-spur/lightbox-gallery.js"></script>
+  <script src="https://julius-altmann-3333.github.io/bentley-flying-spur/appointment-autofill.js"></script>
+  <script src="https://julius-altmann-3333.github.io/bentley-flying-spur/payment-modal.js"></script>
+
+  <title>Bentley Flying Spur Mansory Edition</title>
+
+  </head>
+<body>
+
+<nav>
+    <div class="logo">Bentley Mansory</div>
+    <ul id="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#threeD">3D Model</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#buy">Buy Now</a></li>
+    </ul>
+    <button class="lang-switch" id="langToggle">DE</button>
+    <div class="menu-toggle" id="menuToggle">
+      <div></div><div></div><div></div>
+    </div>
+</nav>
+
+<header>
+    <h1>Bentley Flying Spur Mansory Edition</h1>
+    <p>The pinnacle of luxury and performance, handcrafted for discerning drivers.</p>
+    <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Broker</button>
+</header>
+
+<section id="overview">
+    <h2>Overview & Specs</h2>
+    <p>Handcrafted elegance and blistering performance with a W12 engine and ultra-luxurious interior details.</p>
+    <div class="features-grid">
+      <div class="feature-box">
+        <div class="feature-icon">🏎️</div>
+        <h3>Engine</h3>
+        <p>6.0L W12 twin-turbocharged delivering 650 HP and 900 Nm torque.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">⚡</div>
+        <h3>0–60 mph</h3>
+        <p>Accelerates in just 3.7 seconds — sports car speed in a luxury saloon.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">🛡️</div>
+        <h3>Safety</h3>
+        <p>Equipped with cutting-edge driver assist and radar-based protection.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">🎵</div>
+        <h3>Audio</h3>
+        <p>20-speaker Naim sound system envelops you in immersive audio.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">💺</div>
+        <h3>Interior</h3>
+        <p>Carbon fiber, leather, and Alcantara elegance across every surface.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">🌐</div>
+        <h3>Smart Tech</h3>
+        <p>Apple CarPlay, Android Auto, and AI navigation with traffic updates.</p>
+      </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://julius-altmann-3333.github.io/lp-flying-spur/jpeg-optimizer_flying-spur (1).jpg" alt="Image 1" tabindex="0" onclick="openLightbox(0)" />
+      <img src="https://julius-altmann-3333.github.io/lp-flying-spur/jpeg-optimizer_flying-spur (9).jpg" alt="Image 2" tabindex="0" onclick="openLightbox(1)" />
+      <img src="https://julius-altmann-3333.github.io/lp-flying-spur/jpeg-optimizer_flying-spur (7).jpg" alt="Image 3" tabindex="0" onclick="openLightbox(2)" />
+      <img src="https://julius-altmann-3333.github.io/lp-flying-spur/jpeg-optimizer_flying-spur (3).jpg" alt="Image 4" tabindex="0" onclick="openLightbox(3)" />
+      <img src="https://julius-altmann-3333.github.io/lp-flying-spur/jpeg-optimizer_flying-spur (4).jpg" alt="Image 5" tabindex="0" onclick="openLightbox(4)" />
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <button class="close" onclick="closeLightbox()">✖</button>
+      <div class="slider-lightbox">
+        <button class="nav-lightbox prev" onclick="prevSlide()">‹</button>
+        <img id="lightboxImage" src="" alt="Large preview" />
+        <button class="nav-lightbox next" onclick="nextSlide()">›</button>
+      </div>
+    </div>
+</section>
+
+<section id="threeD">
+    <h2>3D Model</h2>
+    <div class="threeD-viewer">Interactive 3D Model (Placeholder)</div>
+</section>
+
+<section id="video">
+    <h2>Experience the Drive</h2>
+    <div class="video-container">
+      <video id="video-file" controls poster="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=80">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="contact-info">
+      <h3 id="heading-contact-broker">Contact Broker</h3>
+      <h4><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></h4>
+      <h4><strong>Email:</strong> <a href="mailto:sales@bentleymansory.com">sales@bentleymansory.com</a></h4>
+      <h4><strong>Location:</strong> 123 Luxury Lane, Beverly Hills, CA</h4>
+    </div>
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q=beverly%20hills&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+</section>  
+
+  <!-- Contact Section for Car Broker Appointment -->
+<section id="car-contact-section" class="contact-section">
+  <div class="contact-container">
+    <h2 class="contact-heading">Schedule a Testdrive</h2>
+    <form id="car-contact-form" class="contact-form">
+      <div class="form-group">
+        <label for="client-name">Full Name</label>
+        <input type="text" id="client-name" class="form-input" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="client-email">Email Address</label>
+        <input type="email" id="client-email" class="form-input" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <label for="client-phone">Phone Number</label>
+        <input type="tel" id="client-phone" class="form-input" placeholder="Your Phone Number" required />
+      </div>
+      <div class="form-group">
+        <label for="appointment-date">Appointment Date</label>
+        <input type="date" id="appointment-date" class="form-input" required />
+      </div>
+      <div class="form-group">
+        <label for="appointment-time">Appointment Time</label>
+        <input type="time" id="appointment-time" class="form-input" required />
+      </div>
+      <button type="submit" class="submit-btn">Book Appointment</button>
+    </form>
+  </div>
+</section>
+
+<section id="buy" class="buy-section">
+  <h2>Buy Now</h2>
+  <p>Choose your payment method and reserve your Bentley Flying Spur Mansory Edition today.</p>
+
+<!--
+  <div class="image-collage">
+    <div class="collage-item large"><img src="https://source.unsplash.com/600x400/?bentley,luxury" alt="Luxury Car 1"></div>
+    <div class="collage-item"><img src="https://source.unsplash.com/300x300/?bentley,interior" alt="Car Interior"></div>
+    <div class="collage-item tall"><img src="https://source.unsplash.com/300x500/?bentley,design" alt="Design Detail"></div>
+    <div class="collage-item"><img src="https://source.unsplash.com/300x300/?bentley,detail" alt="Car Detail"></div>
+    <div class="collage-item wide"><img src="https://source.unsplash.com/500x300/?bentley,engine" alt="Engine"></div>
+  </div>
+-->
+  <div class="payment-icons">
+    <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" data-method="visa">
+    <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="MasterCard" data-method="mastercard">
+    <img src="https://cdn-icons-png.flaticon.com/512/349/349234.png" alt="American Express" data-method="amex">
+    <img src="https://cdn-icons-png.flaticon.com/512/196/196565.png" alt="PayPal" data-method="paypal">
+    <img src="https://bitcoin.org/img/icons/opengraph.png?1644775669" alt="Bitcoin" data-method="bitcoin" style="width:60px; height:auto;">
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="payment-modal" class="payment-modal hidden">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <div id="modal-body">
+      <!-- Dynamic content will be inserted here -->
+    </div>
+  </div>
+</div>
+
+<footer>
+    © 2025 Bentley Mansory. All rights reserved.
+</footer>
+</body>
+</html>
